@@ -1,0 +1,59 @@
+{
+  "models": [
+    {
+      "model_name": "random_forest",
+      "cv_folds": 5,
+      "targets": {
+        "calories": {
+          "MAE": 111.8,
+          "RMSE": 152.98,
+          "R2": 0.8991
+        },
+        "protein": {
+          "MAE": 12.47,
+          "RMSE": 15.89,
+          "R2": 0.8147
+        },
+        "carbs": {
+          "MAE": 24.25,
+          "RMSE": 31.94,
+          "R2": 0.762
+        },
+        "fats": {
+          "MAE": 6.14,
+          "RMSE": 8.09,
+          "R2": 0.7494
+        }
+      },
+      "average_r2": 0.8063
+    },
+    {
+      "model_name": "xgboost",
+      "cv_folds": 5,
+      "targets": {
+        "calories": {
+          "MAE": 120.7,
+          "RMSE": 160.95,
+          "R2": 0.8883
+        },
+        "protein": {
+          "MAE": 13.23,
+          "RMSE": 17.17,
+          "R2": 0.7837
+        },
+        "carbs": {
+          "MAE": 25.49,
+          "RMSE": 33.55,
+          "R2": 0.7374
+        },
+        "fats": {
+          "MAE": 6.66,
+          "RMSE": 8.94,
+          "R2": 0.694
+        }
+      },
+      "average_r2": 0.7759
+    }
+  ],
+  "best_model": "random_forest"
+}
